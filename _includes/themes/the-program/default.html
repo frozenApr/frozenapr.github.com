@@ -28,11 +28,14 @@ div.about_me img:hover {cursor: pointer;}
 				<nav class="nav-global">
 					<ul>
 						<li class="logo"><a href="/">{{ site.title }}</a></li>
-						<!-- <li class="archive"><a href="/archive.html">文字摘录</a></li>
+						<li class="archive"><a href="/archive.html">文字摘录</a></li>
+						<li class="songs"><a href="/songs.html">精选歌曲</a></li>
+						<li class="pictures"><a href="/pictures.html">图片观赏</a></li>
+					  </br>
 						<li class="page"><a href="/pages.html">所有页面</a></li>
 						<li class="category"><a href="/categories.html">分类显示</a></li>
 						<li class="tag"><a href="/tags.html">标签</a></li>
-						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
+						<!-- <li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
 									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li> -->
 					</ul>
 				</nav>
@@ -76,7 +79,9 @@ div.about_me img:hover {cursor: pointer;}
 		js = d.createElement(s); js.src = url; js.id = id;
 		fjs.parentNode.insertBefore(js, fjs);
 		};
-	load('//platform.twitter.com/widgets.js', 'tweetjs');
+		// load('//platform.twitter.com/widgets.js', 'tweetjs');
+   	load('../assets/js/widgets.js', 'tweetjs');
+
 	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
 	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="{{ page.url }}" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
 	}(document, 'script'));
@@ -92,13 +97,13 @@ div.about_me img:hover {cursor: pointer;}
 	<img src="/assets/themes/the-program/skin/pull_down.svg" class="arrow_down">
 	</div>
 
-	<div class="content_about_me" id="up_show"style="background: rgba(129, 202, 195, 0.58);height:300px;">
+	<div class="content_about_me" id="up_show" style="background: rgba(129, 202, 195, 0.58);height:900px;">
    <p>121324</p>
 	 <p>121324</p>
 	 <p>121324</p>
 	</div>
-	<div style="height:300px">
-	</div>
+	<!-- <div style="height:300px">
+	</div> -->
 </body>
 </html>
 <script src="../assets/js/jquery-2.1.4.min.js"></script>
