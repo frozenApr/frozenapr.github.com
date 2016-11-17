@@ -4,12 +4,19 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+<style>
+div.about_me {margin-top:-300px;position:absolute;margin-left:50%;}
+div.about_me a {color:white;font-size:23px;}
+div.about_me img {margin-left:55px;margin-top:20px;width:24px;height:28px;}
+div.about_me img:hover {cursor: pointer;}
+</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>{{ page.title }}</title>
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
+	<link href="/logo.png" rel="shortcut icon">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
 <body>
@@ -21,12 +28,12 @@
 				<nav class="nav-global">
 					<ul>
 						<li class="logo"><a href="/">{{ site.title }}</a></li>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
+						<!-- <li class="archive"><a href="/archive.html">文字摘录</a></li>
+						<li class="page"><a href="/pages.html">所有页面</a></li>
+						<li class="category"><a href="/categories.html">分类显示</a></li>
+						<li class="tag"><a href="/tags.html">标签</a></li>
 						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
-									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
+									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li> -->
 					</ul>
 				</nav>
 			</div><!-- unit-inner -->
@@ -60,6 +67,7 @@
 			</div><!-- unit-foot-inner -->
 		</div><!-- unit-foot -->
 	</footer>
+
 </div><!-- page -->
 <script>
 	(function(d, s) {
@@ -79,5 +87,18 @@
 </script>
 
   {% include JB/analytics %}
+	<div class="about_me">
+	<a href="#up_show" class="more scrolly">A B O U T&nbsp;&nbsp;M E</a></br>
+	<img src="/assets/themes/the-program/skin/pull_down.svg" class="arrow_down">
+	</div>
+
+	<div class="content_about_me" id="up_show"style="background: rgba(129, 202, 195, 0.58);height:300px;">
+   <p>121324</p>
+	 <p>121324</p>
+	 <p>121324</p>
+	</div>
+	<div style="height:300px">
+	</div>
 </body>
 </html>
+<script src="../assets/js/jquery-2.1.4.min.js"></script>

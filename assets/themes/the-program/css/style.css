@@ -553,6 +553,7 @@ html {
   background-size: 100% 900px;
   background-position: 0 0;
   background-color: #e2e2de;
+  background-attachment:fixed;
 }
 .body .unit-body {
   /*background-color: #fafafa;*/
@@ -610,7 +611,7 @@ pre {
 /* MAIN
 --------------------------------------------------------------------------------- */
 .unit-article header {
-  border-bottom: 5px solid rgba(21, 25, 25, 0.8);
+  /*border-bottom: 5px solid rgba(21, 25, 25, 0.8);*/
   margin-bottom: 21px;
 }
 .unit-article header h1 {
@@ -779,7 +780,7 @@ pre {
   border-bottom: 0;
 }
 .unit-article .unit-foot {
-  border-top: 5px solid rgba(21, 25, 25, 0.8);
+  /*border-top: 5px solid rgba(21, 25, 25, 0.8);*/
   padding-top: 1.625em;
   position: relative;
 }
@@ -791,6 +792,13 @@ pre {
 }
 .unit-article .unit-foot .gotop {
   margin-bottom: 0;
+  padding: 10px;
+  background-color: #033035;
+  width:70px;
+}
+.unit-article .unit-foot .gotop a{
+  border-bottom: none;
+  color: white;
 }
 /* post & page */
 .layout-page .tag_box {
